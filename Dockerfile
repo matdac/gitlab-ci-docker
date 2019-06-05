@@ -16,6 +16,7 @@ RUN apt-get update && \
         curl \
         git \
         rsync \
+        nodejs \
         build-essential \
         libmemcached-dev \
         libz-dev \
