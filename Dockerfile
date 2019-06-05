@@ -15,7 +15,6 @@ RUN apt-get update && \
         openssh-client \
         curl \
         git \
-        libssl1.0.0 \
         rsync \
         build-essential \
         libmemcached-dev \
