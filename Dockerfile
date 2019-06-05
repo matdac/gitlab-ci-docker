@@ -1,7 +1,6 @@
 FROM php:7.1-fpm
 MAINTAINER Matthieu DA CONCEICAO
 
-
 RUN apt-get update && \
     apt-get install -y --no-install-recommends \
         apt-transport-https \
@@ -17,7 +16,6 @@ RUN apt-get update && \
         curl \
         git \
         libssl1.0.0 \
-        mongodb-org-shell \
         rsync \
         build-essential \
         libmemcached-dev \
