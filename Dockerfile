@@ -47,6 +47,9 @@ RUN pecl install xdebug-2.5.5 && docker-php-ext-enable xdebug
 RUN curl -sS https://getcomposer.org/installer | php
 RUN mv composer.phar /usr/local/bin/composer
 
+RUN curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
+RUN apt install -y nodejs
+
 # Install PHP Code sniffer
 RUN curl -OL https://squizlabs.github.io/PHP_CodeSniffer/phpcs.phar
 RUN mv phpcs.phar /usr/local/bin/phpcs
